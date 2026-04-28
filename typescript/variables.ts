@@ -111,4 +111,4 @@ console.log(v);
 let v=20         // Cannot access before intitalization
 
 console.log(z);
-const z=40      // Cannot access before intitalization
+const z=40      // Cannot access before intitalization 

@@ -29,7 +29,7 @@ console.log("isIphone", isIphone)       // is iPhone ? true
 console.log("isbad ?", isbad)            // isbad? false
 
 
-/* 
+
 
 // 4) Null
 let emptyvalue:null=null
@@ -93,7 +93,7 @@ scores=null
 console.log(scores)         
 // not allowed as this is an null datatype
 
- */
+
 
 // 8) Void
 //Used for functions that don’t return anything
