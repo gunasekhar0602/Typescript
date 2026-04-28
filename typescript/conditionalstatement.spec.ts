@@ -1,17 +1,18 @@
-//1) if condition-
+1) if condition-
 
-//The if statement executes a block of code only if a specified condition is true.
-// If the condition evaluates to false, the code inside the if block is skipped
-
-//Syntax:
-
-if(condition) 
+The if statement executes a block of code only if a specified condition is true.
+ 
+If the condition evaluates to false, the code inside the if block is skipped.
+ 
+Syntax:
+ 
+if (condition) 
 {
 // Code to execute if condition is true
 }
-
-//Example:
-
+ 
+Example:
+ 
 let age: number = 18;
 if (age >= 18)
 {
@@ -20,8 +21,12 @@ if (age >= 18)
 
 // output : You are eligible to vote
 
-2) if-else Statement
- 
+
+
+
+
+// 2) if-else Statement
+/*
 The if-else statement executes one block of code if the condition is true, and another block if the condition is false.
  
 Syntax:
@@ -29,11 +34,12 @@ Syntax:
 if (condition)
 {
 	// Code to execute if condition is true
- }
+}
  else 
 {
 	// Code to execute if condition is false
 }
+*/
 
 Example:
 
@@ -46,10 +52,13 @@ if (num % 2 === 0)
 else
 { 
 	console.log("Odd number");
- }
+}
 
-3) Nested if-else (if-else if) Statement
- 
+
+
+
+// 3) Nested if-else (if-else if) Statement
+/* 
 This is used when multiple conditions need to be checked sequentially.
  
 The first true condition is executed, and the rest are skipped.
@@ -72,7 +81,8 @@ else
 {
  // Code to execute if none of the conditions are true
 }
- 
+*/
+
 Example:
  
 let marks: number = 85;
@@ -89,12 +99,17 @@ else if (marks >= 50)
 { 
 	console.log("Grade: C");
  } 
-else;
-	console.log(“Fail”)
+else
 {
+	console.log(“Fail”)
+}
 
-4) switch-case Statement
- 
+
+
+
+// 4) switch-case Statement
+
+/*
 The switch statement allows testing a variable against multiple values (case).
  
 If a match is found, that case block executes. The break statement stops execution after a match.
@@ -127,7 +142,8 @@ case value3:
 default:
  
 // Code to execute if no case matches
- }
+}
+*/
 
 Example:
  
@@ -164,7 +180,7 @@ default:
 console.log("Invalid day"); 
 }
 
-Key Takeaways
+/*Key Takeaways
  
 if
 Executes code if condition is true.
@@ -174,3 +190,4 @@ if-else
  
 if-else-if
  Checks multiple conditions sequentially.
+*/
