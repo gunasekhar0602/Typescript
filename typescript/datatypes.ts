@@ -17,7 +17,7 @@ let MobileName: string=`Hello ${Name} ${Mobile}`
 
 // Adding two strings, for that we need the backlit symbol. Here we are parameterizing.
 
-console.log(MobileName);     //---› Hello Apple Iphone */
+console.log(MobileName);     //---› Hello Apple Iphone
 
 
 
@@ -106,7 +106,5 @@ function sum(): void
 {
 	console.log(10-20)
 }
-sum ()          // -10
-
-
+sum()         
 
