@@ -29,7 +29,7 @@ console.log("isIphone", isIphone)       // is iPhone ? true
 console.log("isbad ?", isbad)            // isbad? false
 
 
-
+/* 
 
 // 4) Null
 let emptyvalue:null=null
@@ -41,10 +41,10 @@ console.log(emptyvalue)         // null
 
 
 // 5) Undefined
-Represents a variable declared but not assigned (let y; → y is undefined).
+//Represents a variable declared but not assigned (let y; → y is undefined).
  
-let age: undefined=undefined
-age=10
+let ages: undefined=undefined
+ages=10
 
 //typesafety, '10' is not assignable to type 'undefined'
 console.log(age) 
@@ -58,18 +58,18 @@ console.log(age)
  
 // This will lose the type safety benefit.
 
-let age : any=1 
-console.log(age)         // 1
-console. log(typeof age)       // number
+let agess: any=1 
+console.log(agess)         // 1
+console. log(typeof agess)       // number
 
-age="one"
-console. log(age)    // one
-console.log(typeof age)       // string
+agess="one"
+console. log(agess)    // one
+console.log(typeof agess)       // string
 
 
-age=true
-console.log(age)      // true
-console.log(typeof age)         // Boolean 
+agess=true
+console.log(agess)      // true
+console.log(typeof agess)         // Boolean 
 
 
 
@@ -79,25 +79,25 @@ console.log(typeof age)         // Boolean
 // 7) Union Type
 //Allows multiple types for a variable (let id: string | number = "123";).
  
-let score: number | string | boolean
-score=true
-console.log(score)
+let scores: number | string | boolean
+scores=true
+console.log(scores)
 
-score="Apple"
-console.log(score)
+scores="Apple"
+console.log(scores)
 
-score=1
-console. log(score)
+scores=1
+console.log(scores)
 
-score=null
-console.log(score)         
+scores=null
+console.log(scores)         
 // not allowed as this is an null datatype
 
-
+ */
 
 // 8) Void
 //Used for functions that don’t return anything
-(function log(): void { console.log("Hi"); }).
+//(function log(): void { console.log("Hi"); })
 
 // Void is nothing but the function not returning anything and void is optional.
 
@@ -109,9 +109,4 @@ function sum(): void
 sum ()          // -10
 
 
-function sum (a: number, b: number): number
-return (a+b)
-{
-let res: number = sum (10,20)
-}
-console.log(res)          // 30
+
