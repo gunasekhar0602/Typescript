@@ -1,4 +1,4 @@
-// 1) Arithmetic Operators
+// 1) Arithmetic Operators.
 /*
 These operators perform basic mathematical operations.
 
