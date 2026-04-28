@@ -6,16 +6,16 @@ function exampleVariable()
         // var is function scope it can be accesible in and out side of block
         var height='Height';
 
-        // let is bloack scope it can be accesible in side the block
+        // let is block scope it can be accesible in side the block
         let weight='Weight';
 
-        // const is bloack scope it can be accesible in side the block
+        // const is block scope it can be accesible in side the block
         const age='Age'
 
 
         console.log(height)       // accesible 
-        console.log(weight)       // not accesible
-        console.log(age)          // not accesible
+        console.log(weight)       // accesible
+        console.log(age)          // accesible
     }
     console.log(height)           // accesible 
     // console.log(weight)        // not accesible
