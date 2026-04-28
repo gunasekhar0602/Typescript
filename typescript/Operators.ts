@@ -80,7 +80,7 @@ console.log(x)                    // 11
 let x:number=10;
 let result:number=++x
 console.log(result)              // 11
-Console.log(x)                    // 11
+console.log(x)                    // 11
 
 // -- (Decrement)
  
