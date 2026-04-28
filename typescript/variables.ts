@@ -24,13 +24,6 @@ function exampleVariable()
 exampleVariable();
 
 
-
-
-
-
-
-
-
 // 2) Declaration of variable OR value assignment
 
 // we can declare var variable without assignment
@@ -48,10 +41,6 @@ console.log(d)  // undefined
 //console.log(e)  // error - missing initializer
 
 
-
-
-
-
 // 3) Redeclaration
 
 // Redeclarion is possible with Var
@@ -61,14 +50,12 @@ console.log(country);
 var country:string="India";
 console.log(country);
 
-
 // Redeclarion is not possible with let
 let city:string='Delhi';
 console.log(city)            // Cannot redeclare
 
 let city:string='Mumbai';
 console.log(city)
-
 
 // Redeclarion is not possible with const
 const state:string='NewDelhi';
@@ -78,14 +65,7 @@ const state:string='Maharastra';
 console.log(state)               // Cannot redeclare
 
 
-
-
-
-
-
-
 // 4) Re intitalization
-
 
 var score=30;
 score=11;
@@ -95,11 +75,6 @@ age=22;
 
 const pi=3.14;
 pi=3.1419              // Can not change a constant
-
-
-
-
-
 
 
 // 5) Hosting -
