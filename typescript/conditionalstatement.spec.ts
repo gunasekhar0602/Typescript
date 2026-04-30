@@ -1,6 +1,6 @@
-1) if condition-
+//1) if condition-
 
-The if statement executes a block of code only if a specified condition is true.
+/* The if statement executes a block of code only if a specified condition is true.
  
 If the condition evaluates to false, the code inside the if block is skipped.
  
@@ -10,8 +10,8 @@ if (condition)
 {
 // Code to execute if condition is true
 }
- 
-Example:
+  */
+// Example:
  
 let age: number = 18;
 if (age >= 18)
@@ -41,7 +41,7 @@ if (condition)
 }
 */
 
-Example:
+// Example:
 
 let num: number = 10;
  
@@ -83,7 +83,7 @@ else
 }
 */
 
-Example:
+// Example:
  
 let marks: number = 85;
  
@@ -101,7 +101,7 @@ else if (marks >= 50)
  } 
 else
 {
-	console.log(“Fail”)
+	console.log('Fail')
 }
 
 
@@ -145,7 +145,7 @@ default:
 }
 */
 
-Example:
+// Example:
  
 let day: number = 3;
  

@@ -1,47 +1,4 @@
-14. Typescript objects -
-
-What is an Object?
- 
-An object is a collection of key-value pairs.
- 
-It contains:
- 
-• Properties (variables)
- – e.g., name, age, salary
- 
-• Methods (functions) 
-– e.g., getDetails(), setDetails()
- 
-Objects represent real-world entities like Employee, Student, Product, etc.
-
-Example: Employee
- 
-let employee = 
-{ 
-	name: "John",
- 
-	salary: 50000,
- 
-	job: "Engineer",
- 
-getDetails: function ()
-{
- 	return `${this.name} is a ${this.job} earning ${this.salary}`;
- }
- };
- 
-Accessing properties:
- 
-• Dot notation → employee.name
- 
-• Bracket notation → employee["name"]
- 
-Modifying:
- 
-employee.job = "Manager";
- 
- 
- 
+/* 
 Different Ways to Create Objects in TS/JS
  
 1. Using object type (JS/TS)
@@ -52,83 +9,70 @@ Different Ways to Create Objects in TS/JS
  
 4. Using Classes (JS/TS)
 
-
-1. Using object type (JS/TS)
+ */
+ 
+// 1. Using object type (JS/TS)
  
-Basic way without strict typing:
- 
-let employee: object = 
+// Basic way without strict typing:
+  let student =
 {
- 	name: "John",
- 	age: 30,
- 	job: "Engineer"
-
-getdetails:function()
-{
-	console.log(this.name, this.age, this.job)
-	 return `${this.name} is a ${this.age} earning ${this.job}`;
-
+	name:"Dhoni",
+	age:30,
+	score:44,
+	class:"seven",
+	getDetails:function(this:any)
+	{
+		console.log(this.name,this.age,this.class)
+	}
 }
-};
 
-// accessing object - approach 1(using .notation)
-console.log(employee.name)
-John
-console.log(employee.age)
-30
-console.log(employee.job)
-Engineer
+console.log(typeof student)
 
-console.log (employee.getdetails());
-//john is a engineer earining 50000
+console.log(student.getDetails())
+// Dhoni 30 seven
 
 
-// accessing object - apprach 2 (using bracket notation)
+// modifying the details
+student.age=35
 
-console.log(employee["name"], employee["salary"], employee["job"]) 
-// john 50000 engineer
+console.log(student.getDetails())
+// Dhoni 35 seven
 
-console.log(employee[" getdetails"]()); 
-// john is a engineer earining 50000
 
-// modify the value
-employee. job="Manager";
-console.log(employee.job)
-// Manager
 
-But we can’t access properties directly unless we define the structure or use any.
+
+// 2. Inline Type Object (TS)
  
+// Here, we define the structure while creating the object.
  
- 
-2. Inline Type Object (TS)
- 
-Here, we define the structure while creating the object.
- 
-let student:
+// Declaration object - key with datatype
+let students:
 {
- 	name: string;
- 	age: number;
- 	grade: string;
- 	getSummary: () => string;
- } =
+	name: string;
+	age: number;
+	grade: string;
+	getSummary: () => string
+} =
 {
  	name: "Scott",
  	age: 15,
  	grade: "A",
  	getSummary: function ()
  	{
- 	return`${this.name} is ${this.age}years old and scored grade $					{this.grade}`;
+ 	return`${this.name} is ${this.age}years old and scored grade ${this.grade}`;
  	}
  };
 
-console.log(students.get summary ());
+console.log(students.getSummary());
  
-Limitation: Need to repeat the type structure for each object.
+//Limitation: Need to repeat the type structure for each object.
 
-3. Using type aliases (TS)
  
-Reusable type definitions.
+// 3. Using type aliases (TS)
  
+// Reusable type definitions.
+ 
+// Creating structue of object for once
 type Product =
 {
  	name: string;
@@ -136,61 +80,65 @@ type Product =
  	getInfo: () => string;
  };
  
-Then use it for multiple objects:
+//Then use it for multiple objects:
  
 
-let book1: product =
+let book1: Product =
 {
 	name: "learn Typescript", 
 	price: 344,
 	getInfo: function()
 	{
-		return ${this.name} cost${this.price} ;
+		return `${this.name} cost is ${this.price}` ;
 	}
 };
 let book2=
 {
-	name: "learn Python"
+	name: "learn Python",
 	price: 222,
  	getInfo: function()
 	{
-		return "#{this.name} cost ${this.price} ;
+		return `${this.name} cost is ${this.price}`
 	}
 };
-console.1og(book1.getInfo());
+console.log(book1.getInfo());
 // learn Typescript cost344
 
-console.log(book2. getInfo());
+console.log(book2.getInfo());
 // learn Python cost 222
 
+
+
+
+
+//4. Using Classes (JS/TS)
  
-4. Using Classes (JS/TS)
- 
-Blueprint for creating multiple objects with same structure and behaviour
-Create class
+//Blueprint for creating multiple objects with same structure and behaviour
+// Create class
 class Person
 {
 	ssn:string;                     
-	firstname:string;   
-	lastname:string;
+	firstName:string;   
+	lastName:string;
 
-Constructor will assign the data to the class variable 
+/*
+ Constructor will assign the data to the class variable 
 Constructor will never return the value
 Constructor will be involved automatically at the time of object creation of class
+ */
 
-Create constructor 
-constructor(ssn: string, 
-	firstName: string,
-	lastName: string)
+// Create constructor 
+constructor(ssn: string, firstName: string, lastName: string)
 {
-	this.ssn=ssn
-	this.firstname=firstname
-	this.lastname=lastname
+	// this represents calss
+	this.ssn=ssn,
+	this.firstName=firstName,
+	this.lastName=lastName
 }
 
-We need to to invoke a method by using object
+/* We need to to invoke a method by using object
 Method can return the value
-Methods
+Methods */
 getFullName(): string
 {
  	return `${this.firstName} ${this.lastName}`;
@@ -203,19 +151,15 @@ getDetails(): string
  
 }
 
+/* 
 Create object:
  
 Using new keyword we can create we can create multiple objects. Objects are independent
 Objects never share the properties of methods and constructors. Objects will acquire their own copy of the variables, constructors and methods
-
+ */
 let person1 = new Person("123", "Dhoni", "Apple");
 console.log(person1.getDetails());
  
 // Out put = ssn:123, name: Dhoni Apple
  
 
-
-
-
-Summary Table
- 

@@ -1,15 +1,8 @@
-1) while Loop
+// 1) while Loop
  
-The while loop executes a block of code as long as the condition is true.
- 
-Syntax:
- 
-while (condition)
-{
-// Code to execute
- }
- 
-Example:
+/* The while loop executes a block of code as long as the condition is true.
+
+// Example:
  
 let i: number = 1;
  
@@ -19,23 +12,23 @@ console.log(i);
  i++;
  }
  
-Output:
+/* Output:
  
 1   2   3   4   5
  
-The loop checks the condition before execution. If i <= 5, it runs; otherwise, it stops.
+The loop checks the condition before execution. If i <= 5, it runs; otherwise, it stops. */
 
-2) do-while Loop
+// 2) do-while Loop
  
-The do-while loop executes the code at least once before checking the condition.
+/* The do-while loop executes the code at least once before checking the condition.
 
 Syntax:
  
 do {
 
 // Code to execute } while (condition);
- 
-Example:
+  */
+// Example:
  
 let j: number = 1;
  
@@ -46,17 +39,17 @@ console.log(j);
 j++;
  
 } while (j <= 5);
- 
+ /* 
 Output:
  
 1 2 3 4 5
  
 Executes once even if the condition is false.
+  */
  
+// 3) for Loop
  
-3) for Loop
- 
-The for loop is useful when the number of iterations is known.
+/* The for loop is useful when the number of iterations is known.
  
 Syntax:
  
@@ -64,23 +57,26 @@ for (initialization; condition; increment/decrement)
 {
  	// Code to execute
  }
- 
-Example:
+  */
+// Example:
  
 for (let k: number = 1; k <= 5; k++)
 {
 	console.log(k);
 }
 
-Output:
+/* Output:
  
 1 2 3 4 5
  
 Includes initialization, condition check, and increment/decrement in a single line.
+ */
 
-4) break Statement
+
+
+// 4) break Statement
  
-The break statement stops the loop immediately when a condition is met.
+/* The break statement stops the loop immediately when a condition is met.
  
 Syntax:
  
@@ -90,8 +86,8 @@ break;
 }
 	// Code to execute 
 }
- 
-Example:
+  */
+// Example:
  
 for (let n: number = 1; n <= 10; n++)
 {
@@ -102,15 +98,15 @@ for (let n: number = 1; n <= 10; n++)
  console.log(n);
  }
  
-Output:
+/* Output:
  
 1 2 3 4 
 
 The loop exits when n reaches 5.
- 
-5) continue Statement
+  */
+// 5) continue Statement
   
-The continue statement skips the current iteration and moves to the next one.
+/* The continue statement skips the current iteration and moves to the next one.
  
 Syntax:
  
@@ -123,7 +119,7 @@ continue;
 // Code to execute
  
 }
- 
+  */
 Example:
  
 for (let m: number = 1; m <= 5; m++)
@@ -135,19 +131,22 @@ for (let m: number = 1; m <= 5; m++)
 	console.log(m);
  }
  
-Output:
+/* Output:
  
 1 2 4 5
  
 Skips 3 and continues with the next iteration.
 
+ */
 
-Comparison: while Loop vs do-while Loop
+
+
+// Comparison: while Loop vs do-while Loop
  
 
  
  
-Example Demonstration:
+// Example Demonstration:
  
 let x: number = 5;
  
@@ -162,13 +161,13 @@ while (x < 5)
 }
 while (x < 5);
  
-Output:
+/* Output:
  
 Inside do-while loop
  
+  */
  
- 
-Conclusion
+/* Conclusion
  
 Use while when you want to check the condition before execution.
  
@@ -179,3 +178,4 @@ Use for when you know how many times the loop should run.
 Use break to stop a loop early.
  
 Use continue to skip an iteration and proceed to the next one.
+ */

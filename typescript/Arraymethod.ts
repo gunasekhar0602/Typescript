@@ -1,21 +1,23 @@
-11. TypeScript Array Methods
+//11. TypeScript Array Methods
 
-1) push()
+// 1) push()
  
-Description:
+/* Description:
 Adds one or more elements to the end of an array.
 Syntax: 
 array.push(element1, element2, ...) 
 
-Example:
+Example: */
  
-let numbers = [1, 2, 3];
+let number = [1, 2, 3];
  
-numbers.push(4, 5);
+number.push(4, 5);
  
-console.log(numbers);  // Output: [1, 2, 3, 4, 5]
+console.log(number);  // Output: [1, 2, 3, 4, 5]
  
-2) pop()
+
+
+/* 2) pop()
  
 Description:
 Removes the last element from an array and returns it.
@@ -23,7 +25,7 @@ Removes the last element from an array and returns it.
 Syntax:
 array.pop()
  
-Example:
+Example: */
  
 let fruits = ['apple', 'banana', 'mango'];
  
@@ -33,6 +35,10 @@ console.log(fruits); // Output: ['apple', 'banana']
  
 console.log(lastFruit); // Output: 'mango'
  
+
+
+
+/* 
 3) shift()
  
 Description:
@@ -41,9 +47,9 @@ Removes the first element from an array and returns it.
 Syntax: 
 array.shift()
  
-Example:
+Example: */
  
-let numbers = [1, 2, 3];
+let numbers= [1, 2, 3];
  
 let first = numbers.shift();
  
@@ -51,20 +57,25 @@ console.log(numbers); // Output: [2, 3]
  
 console.log(first);  // Output: 1
  
-4) unshift()
+
+
+/* 4) unshift()
  
 Description:
 Adds one or more elements to the beginning of an array.
 Syntax:
 array.unshift(element1, element2, ...) 
 
-Example:
+Example: */
  
-let fruits = ['banana', 'orange'];
+let fruit = ['banana', 'orange'];
  
-fruits.unshift('apple');
+fruit.unshift('apple');
  
-console.log(fruits); // Output: ['apple', 'banana', 'orange']
+console.log(fruit); // Output: ['apple', 'banana', 'orange']
+
+
+/* 
 
 5. concat()
  
@@ -73,7 +84,7 @@ Combines two or more arrays and returns a new array.
 Syntax:
 array.concat(value1, value2, ...)
 
-Example:
+Example: */
  
 let a = [1, 2];
  
@@ -83,8 +94,11 @@ let result = a.concat(b);
  
 console.log(result); // Output: [1, 2, 3, 4]
  
-6. slice()
- 
+
+
+
+// 6. slice()
+/*  
 Description:
 Extracts a section of an array without modifying the original array.
  
@@ -94,12 +108,15 @@ array.slice(startIndex, endIndex)
 Note:
 endIndex is exclusive.
  
-Example:
+Example: */
  
-let fruits = ['kiwi', 'apple', 'banana', 'mango'];
-let selected = fruits.slice(1, 3);
+let fruits1 = ['kiwi', 'apple', 'banana', 'mango'];
+let selected = fruits1.slice(1, 3);
 console.log(selected); // Output: ['apple', 'banana']
  
+
+
+/* 
 7. splice()
  
 Description:
@@ -107,48 +124,63 @@ Adds or removes elements at any position in the array.
 
 Syntax:
 array.splice(start, deleteCount, item1, item2, ...)
-
-Example 1 – Remove:
+ */
+//Example 1 – Remove:
  
-let fruits = ['apple', 'banana', 'cherry'];
+let fruits2= ['apple', 'banana', 'cherry'];
  
-fruits.splice(1, 1);
+fruits2.splice(1, 1);
  
-console.log(fruits); // Output: ['apple', 'cherry']
+console.log(fruits2); // Output: ['apple', 'cherry']
  
-Example 2 – Add:
+//Example 2 – Add:
  
 fruits.splice(1, 0, 'orange');
  
 console.log(fruits); // Output: ['apple', 'orange', 'cherry']
  
-8. indexOf()
+
+
+
+/* 8. indexOf()
  
 Description:
 Returns the index of the first occurrence of a value, or -1 if not found.
 Syntax:
 array.indexOf(value, fromIndex?)
  
-Example:
+Example: */
  
-let fruits = ['apple', 'banana', 'cherry'];
+let fruits3 = ['apple', 'banana', 'cherry'];
  
-console.log(fruits.indexOf('banana')); // Output: 1
+console.log(fruits3.indexOf('banana')); // Output: 1
  
-console.log(fruits.indexOf('grape')); // Output: -1
+console.log(fruits3.indexOf('grape')); // Output: -1
 
-9. includes()
- 
+
+
+
+
+
+
+
+// 9. includes()
+/*  
 Description:
 Checks if an array contains a specific value. Returns true or false.
 Syntax: 
 array.includes(value, fromIndex?) 
 
-Example:
+Example: */
  
-let fruits = ['apple', 'banana']; 
-console.log(fruits.includes('banana')); // Output: true console.log(fruits.includes('grape')); // Output: false
+let fruits4 = ['apple', 'banana']; 
+console.log(fruits4.includes('banana')); 
+
+// Output: true console.log(fruits.includes('grape')); // Output: false
  
+
+/* 
+
 10. toString()
  
 Description: 
@@ -158,11 +190,14 @@ Syntax:
 array.toString()
  
 Example:
+  */
+let numbers2 = [1, 2, 3];
+console.log(numbers2.toString()); // Output: '1,2,3'
  
-let numbers = [1, 2, 3];
-console.log(numbers.toString()); // Output: '1,2,3'
- 
-11. forEach()
+
+
+
+/* 11. forEach()
  
 Description:
 Executes a function once for each array element.
@@ -171,10 +206,10 @@ Syntax:
 array.forEach(function(element, index, array) {...})
  
 Example:
+  */
+let fruits5 = ['apple', 'banana'];
  
-let fruits = ['apple', 'banana'];
- 
-fruits.forEach((fruit, i) => {
+fruits5.forEach((fruit, i) => {
  
 console.log(`${i + 1}. ${fruit}`);
  
@@ -186,7 +221,11 @@ console.log(`${i + 1}. ${fruit}`);
  
 // 2. banana
  
-12. map()
+
+
+
+
+/* 12. map()
  
 Description:
 Creates a new array with the result of a function applied to every element.
@@ -194,7 +233,7 @@ Creates a new array with the result of a function applied to every element.
 Syntax:
 array.map(function(element, index, array) {...})
  
-Example:
+Example: */
  
 let nums = [1, 2, 3];
  
@@ -202,6 +241,10 @@ let squares = nums.map(n => n * n);
  
 console.log(squares); // Output: [1, 4, 9]
 
+
+
+
+/* 
 13. filter()
  
 Description: Creates a new array with all elements that pass the test provided by the function.
@@ -211,13 +254,17 @@ Syntax:
 array.filter(function(element, index, array) {...})
  
 Example:
+  */
+let nums1 = [1, 2, 3, 4];
  
-let nums = [1, 2, 3, 4];
- 
-let evens = nums.filter(n => n % 2 === 0);
+let evens = nums1.filter(n => n % 2 === 0);
  
 console.log(evens); // Output: [2, 4]
  
+
+
+
+/* 
 14. reduce()
  
 Description: Applies a function to reduce the array to a single value (e.g., sum).
@@ -226,14 +273,17 @@ Syntax:
  
 array.reduce(function(accumulator, element, index, array), initialValue)
  
-Example:
+Example: */
  
-let nums = [1, 2, 3];
+let nums2 = [1, 2, 3];
  
-let total = nums.reduce((sum, n) => sum + n, 0);
+let total = nums2.reduce((sum, n) => sum + n, 0);
  
 console.log(total); // Output: 6
  
+
+
+/* 
 15. some()
  
 Description: Returns true if at least one element passes the test.
@@ -243,13 +293,15 @@ Syntax:
 array.some(function(element, index, array) {...})
  
 Example:
+  */
+let nums3 = [1, 2, 3];
  
-let nums = [1, 2, 3];
- 
-let hasNegative = nums.some(n => n < 0);
+let hasNegative = nums3.some(n => n < 0);
  
 console.log(hasNegative); // Output: false
- 
+
+
+/* 
 16. every()
  
 Description: Returns true if all elements pass the test.
@@ -258,11 +310,11 @@ Syntax:
  
 array.every(function(element, index, array) {...})
  
-Example:
+Example: */
  
-let nums = [2, 4, 6];
+let nums4 = [2, 4, 6];
  
-let allEven = nums.every(n => n % 2 === 0);
+let allEven = nums4.every(n => n % 2 === 0);
  
 console.log(allEven); // Output: true
 
