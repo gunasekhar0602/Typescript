@@ -1,49 +1,56 @@
-Creating class
+// Creating class
+// class classname
 class Car
 {
-Assigning properties
-
+//Assigning properties
+// property with datatype of property
 	carname:string;
 	carcolor:string;
 	carmodel:string;
 
-Creating constructor
+//Creating constructor
+// constructor(parameter:datatype)
 constructor(cname:string, ccolor:string, cmodel:string)
 {
+	// this represents class
+	// this.classproperty=constructor parameter;
 	this.carname=cname;
 	this.carcolor=ccolor;
-	this.carmaodel=cmodel
+	this.carmodel=cmodel
 }
 
-creating method
+// creating method
 start()
 {
-	console.log(“car started”)
+	console.log('car started')
 }
 
 stop()
 {
-	console.log(“car stoped”)
+	console.log('car stoped')
 }
 
 cardetails()
 {
-	console.log(`car name is ${this.carname},car color is {this.carcolor},car model is ${this.carmodel} `)
+	console.log(`car name is ${this.carname},
+		car color is ${this.carcolor},
+			car model is ${this.carmodel}`)
 }
-};
+}
 
-Creating a child class
+//Creating a child class
 
 class TATA extends Car
 {
 	yearofmanufacturing:number;
 
 
-// mention the parent class properties in the child class constructor analog with the child class properties
+// mention the parent class constructor parameters in the child class constructor anlong
+//                with the child class constructor parameters
 
 constructor(cname:string, ccolor:string, cmodel:string, yom:number)
 {
-	super(ccar, ccolor, cmodel)
+	super(cname, ccolor, cmodel)
 // super keyword invokes the parent class constructor. Super is a method.
 
 	this.yearofmanufacturing=yom;
@@ -52,24 +59,25 @@ constructor(cname:string, ccolor:string, cmodel:string, yom:number)
 // Method override.
 // When method is overrided the latest implementation will be called, which is from the child class.
 
-super.start()    // this will invoke parent class method.
-start()
+start()   // this will invoke parent class method.
 {
-	console.log(“Tata car started”)
+	console.log('Tata car started');
 }
 
 manufacture()
 {
-	console.log(`year of manufacturing:,${this.yearofmanufacturing}`)
+	console.log(`year of manufacturing:,${this.yearofmanufacturing}`);
 }
 
-tatacardetails()
+cardetails()
 {
-	console.log(`car details: car name is ${this.carname},car color is ${this.carcolor},car model is ${this.carmodel}, car YOM is ${this.yearofmanufacturing}`)
+	console.log(`car details: car name is ${this.carname},
+		car color is ${this.carcolor},car model is ${this.carmodel},
+		 car YOM is ${this.yearofmanufacturing}`)
 }
 };
 
-creating child class
+//creating child class
 class BMW extends Car
 {
 	yearofmanufacturing:number;
@@ -78,7 +86,7 @@ class BMW extends Car
 // mention the parent class properties in the child class constructor analog with the child class properties
 constructor(cname:string, ccolor:string, cmodel:string, yom:number)
 {
-	super(ccar, ccolor, cmodel) 
+	super(cname, ccolor, cmodel) 
 // super keyword invokes the parent class constructor. Super is a method.
 
 	this.yearofmanufacturing=yom;
@@ -89,7 +97,7 @@ constructor(cname:string, ccolor:string, cmodel:string, yom:number)
 
 start()
 {
-	console.log(“BMW started”)
+	console.log('BMW started')
 }
 
 manufacture()
@@ -102,18 +110,18 @@ bmwcardetails()
 	console.log(`car name is ${this.carname},car color is {this.carcolor},
 car model is ${this.carmodel}, car YOM is ${this.yearofmanufacturing}`)
 }
-
+}
 
 // Creating objects
 
-let tata = new TATA(“TATA”, “Black”, “Curve”, 2025)
+let tata = new TATA('TATA', 'Black', 'Curve', 2025)
 
 console.log(tata.carname);
-TATA
+//TATA
 console.log(tata.carcolor);
-Black
-console.log(tata.carmodel);
-Curve
+//Black
+//.log(tata.carmodel);
+//Curve
 console.log(tata.yearofmanufacturing);
 2025
 
@@ -130,23 +138,23 @@ tata.start()
 // Tata car started    // child class
 
 
-console.log( tata.tatacardetails());
+console.log( tata.cardetails());
 
 // car details: carname is Tata, car colour is Black, car model is Curve, car YOM is 2025
 
 
 
 
-parent class variable is hold child class object
-let car: Car=new TATA ("TATA", "Black", "curve", 2025)
-car cardetails(); 
+//parent class variable is hold child class object
+let tatacar: Car=new TATA ("TATA", "Black", "curve", 2025)
+tatacar.cardetails(); 
 //car name is TATA, car color is Black, car model is curve
 
-car.start();
+tatacar.start();
 // Tata car started... (child class)
 
 //car.yom();
-error
-Not accesible. The method which is created in child which is not there in parent.
+//error
+//Not accesible. The method which is created in child which is not there in parent.
 // yom () is created inside the child class but not there in the parent class
 
