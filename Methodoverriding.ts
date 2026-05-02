@@ -1,3 +1,6 @@
+// Inheritance
+
+
 // Creating class
 // class classname
 class Car
@@ -118,12 +121,15 @@ let tata = new TATA('TATA', 'Black', 'Curve', 2025)
 
 console.log(tata.carname);
 //TATA
+
 console.log(tata.carcolor);
 //Black
-//.log(tata.carmodel);
+
+console.log(tata.carmodel);
 //Curve
+
 console.log(tata.yearofmanufacturing);
-2025
+//2025
 
 
 tata.stop()
