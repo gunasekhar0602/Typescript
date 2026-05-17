@@ -67,12 +67,15 @@ console.log(state)               // Cannot redeclare
 
 // 4) Re intitalization
 
+
+//Var and let keyword - Re- assignment is allowed.
 var score=30;
 score=11;
 
 let age=30;
 age=22;
 
+// Const keyword - Re- assignment is not allowed - only constants allowed, cannot change the value.
 const pi=3.14;
 pi=3.1419              // Can not change a constant
 
