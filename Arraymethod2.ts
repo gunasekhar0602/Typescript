@@ -147,9 +147,9 @@ console.log("Does array contains Positives? "
 
 
 
- /*
-6. every() -
- Checks if all elements satisfy a condition
+ 
+// 6. every() -
+// Checks if all elements satisfy a condition
 // Returns true if all elements pass the condition, else false
 // Syntax: array.every(function(currentValue, index, array)())
 //Ex1:
@@ -166,8 +166,9 @@ let allGreaterThanOne=numbers.every (element)=> element>=1 ); console. log("Are 
 //Ex3:
 
 let allPositve=numbers.every (element)=> element>0 );
-console.1og("Are all the numbers positive?", allPositve); //true
+console.1og("Are all the numbers positive?", allPositve); 
+//true
 
 
 
-*/
+
