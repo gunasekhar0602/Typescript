@@ -1,6 +1,4 @@
 // Inheritance
-
-
 // Creating class
 // class classname
 class Car
