@@ -63,7 +63,6 @@ let squaredNumbers=numbers6.map(function(element)
 {
 	return(element * element);
 })
-
 console.log("Squared numbers:", squaredNumbers); 
 
 /* Out put - //[ 1, 4, 9, 16, 25 ]
