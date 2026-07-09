@@ -65,7 +65,7 @@ console.log(cal1.add(1,2,3))
 //Create class
 class Engagement
 {
-
+	
 //Create constructor
 constructor()
 {
@@ -102,11 +102,10 @@ constructor()
 
 //Create object
 let permission =new Engagement()
-
 console.log(permission.addpermission( ))
 //Output - user is not having permissions
 
-console.log(permission.addpermission('admin' ))
+console.log(permission.addpermission('admin'))
 //Output - user is having adminpermission
 
 console.log(permission.addpermission( 'admin', 'copy'))
