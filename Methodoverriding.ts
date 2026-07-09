@@ -19,18 +19,15 @@ constructor(cname:string, ccolor:string, cmodel:string)
 	this.carcolor=ccolor;
 	this.carmodel=cmodel
 }
-
 // creating method
 start()
 {
 	console.log('car started')
 }
-
 stop()
 {
 	console.log('car stoped')
 }
-
 cardetails()
 {
 	console.log(`car name is ${this.carname},
