@@ -48,15 +48,9 @@ class EMPLOYEE extends Person
 }
 
 let emp1=new EMPLOYEE('Dhoni',23,111,1)
-emp1.diaplayinfo()
-// Dhoni
-// 23
-// 111
+emp1.diaplayinfo()      // Dhoni    // 23    // 111
 
-emp1.employeedetails()
-// Dhoni
-// 23
-// 1
+emp1.employeedetails()  // Dhoni    // 23    // 1
 
 console.log(emp1.name); // accessible
 // console.log(emp1.age);  // not accessible
