@@ -70,7 +70,6 @@ class Engagement
 constructor()
 {
 }
-
 //Create methods
 // methodname():datatype;
 	addpermission():void;
