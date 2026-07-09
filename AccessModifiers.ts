@@ -3,12 +3,11 @@ class Person
     // public property - accessible anywhere
     public name:string;
 
-    // protected property - accessible with in class anf with in child class
+    // protected property - accessible with in class and with in child class
     protected age:number;
 
     // private property - accessible only with in class
     private salary:number;
-
 
     constructor(name:string,age:number,salary:number)
     {
@@ -25,11 +24,9 @@ class Person
     }
 }
 
-
 class EMPLOYEE extends Person
 {
     private employeeID:number;
-
 
     constructor(name:string,age:number,salary:number,employeeID:number)
     {
@@ -43,7 +40,7 @@ class EMPLOYEE extends Person
         console.log(this.age)  // accessible
 
         // not accessible as salary is private and only accessbile with in the class Person
-        // console.log(this.salary) 
+        console.log(this.salary) 
         
         // accessible as the employeeID is private and it is declared in the inside the same class
         console.log(this.employeeID)
@@ -51,7 +48,6 @@ class EMPLOYEE extends Person
 }
 
 let emp1=new EMPLOYEE('Dhoni',23,111,1)
-
 emp1.diaplayinfo()
 // Dhoni
 // 23
@@ -63,9 +59,6 @@ emp1.employeedetails()
 // 1
 
 console.log(emp1.name); // accessible
-
 // console.log(emp1.age);  // not accessible
-
 // console.log(emp1.salary);// not accessible
-
 // console.log(emp1.employeeID); // not accessible
