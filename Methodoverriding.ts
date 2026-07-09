@@ -100,40 +100,26 @@ bmwcardetails()
 }
 
 // Creating objects
-
 let tata = new TATA('TATA', 'Black', 'Curve', 2025)
-
 console.log(tata.carname);
 //TATA
-
 console.log(tata.carcolor);
 //Black
-
 console.log(tata.carmodel);
 //Curve
-
 console.log(tata.yearofmanufacturing);
 //2025
-
-
 tata.stop()
 // car stoped      // Parent class
-
 tata.start()
 // it will take child class only if we are not using the super with parent class method at the child class method
 // Tata car started    // child class
-
 // it will take parent class method and child class method if we are using the super with parent class method at the child class method.
 // car started          // parent class
 // Tata car started    // child class
 
-
 console.log( tata.cardetails());
-
 // car details: carname is Tata, car colour is Black, car model is Curve, car YOM is 2025
-
-
-
 
 //parent class variable is hold child class object
 let tatacar: Car=new TATA ("TATA", "Black", "curve", 2025)
@@ -143,7 +129,7 @@ tatacar.cardetails();
 tatacar.start();
 // Tata car started... (child class)
 
-//car.yom();
+car.yom();
 //error
 //Not accesible. The method which is created in child which is not there in parent.
 // yom () is created inside the child class but not there in the parent class
