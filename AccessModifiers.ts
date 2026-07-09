@@ -9,11 +9,11 @@ class Person
     // private property - accessible only with in class
     private salary:number;
 
-    constructor(name:string,age:number,salary:number)
+    constructor(pname:string,page:number,psalary:number)
     {
-        this.name=name;
-        this.age=age;
-        this.salary=salary
+        this.name=pname;
+        this.age=page;
+        this.salary=psalary
     }
 
     diaplayinfo()
@@ -28,10 +28,10 @@ class EMPLOYEE extends Person
 {
     private employeeID:number;
 
-    constructor(name:string,age:number,salary:number,employeeID:number)
+    constructor(pname:string,page:number,psalary:number,pemployeeID:number)
     {
-        super(name,age,salary)
-        this.employeeID=employeeID;
+        super(pname,page,psalary)
+        this.employeeID=pemployeeID;
     }
 
     employeedetails()
