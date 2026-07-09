@@ -50,20 +50,16 @@ constructor(cname:string, ccolor:string, cmodel:string, yom:number)
 
 	this.yearofmanufacturing=yom;
 }
-
 // Method override.
 // When method is overrided the latest implementation will be called, which is from the child class.
-
 start()   // this will invoke parent class method.
 {
 	console.log('Tata car started');
 }
-
 manufacture()
 {
 	console.log(`year of manufacturing:,${this.yearofmanufacturing}`);
 }
-
 cardetails()
 {
 	console.log(`car details: car name is ${this.carname},car color is ${this.carcolor},car model is ${this.carmodel},
