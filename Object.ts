@@ -69,9 +69,7 @@ console.log(students.getSummary());
 
  
 // 3. Using type aliases (TS)
- 
 // Reusable type definitions.
- 
 // Creating structue of object for once
 type Product =
 {
@@ -81,8 +79,6 @@ type Product =
  };
  
 //Then use it for multiple objects:
- 
-
 let book1: Product =
 {
 	name: "learn Typescript", 
