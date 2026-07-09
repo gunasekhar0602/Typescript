@@ -40,8 +40,7 @@ class TATA extends Car
 {
 	yearofmanufacturing:number;
 
-
-// mention the parent class constructor parameters in the child class constructor anlong
+// mention the parent class constructor parameters in the child class constructor along
 //                with the child class constructor parameters
 
 constructor(cname:string, ccolor:string, cmodel:string, yom:number)
@@ -67,8 +66,7 @@ manufacture()
 
 cardetails()
 {
-	console.log(`car details: car name is ${this.carname},
-		car color is ${this.carcolor},car model is ${this.carmodel},
+	console.log(`car details: car name is ${this.carname},car color is ${this.carcolor},car model is ${this.carmodel},
 		 car YOM is ${this.yearofmanufacturing}`)
 }
 };
