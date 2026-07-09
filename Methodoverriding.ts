@@ -30,9 +30,7 @@ stop()
 }
 cardetails()
 {
-	console.log(`car name is ${this.carname},
-		car color is ${this.carcolor},
-			car model is ${this.carmodel}`)
+	console.log(`car name is ${this.carname}, car color is ${this.carcolor}, car model is ${this.carmodel}`)
 }
 }
 
