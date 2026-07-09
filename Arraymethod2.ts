@@ -70,20 +70,16 @@ console.log("Squared numbers:", squaredNumbers);
 console.log("Original array: ",numbers);
 Out put - //[1, 2, 3, 4, 5 ] */
 
-
-
 //Ex2: Double each number [1,2,3,4,5] ---› [2,4,6,8,10]
 
 let doubledvalues=numbers6.map((element) =>
 {
 return(element*2);
 })
-
 let doubledValues=numbers6.map( (element)=> element*2); 
 // If you have single return statement inside the arrow function then {} and 'return'
 
 console.log("Doubled Numbers: ", doubledValues); 
-
 // Out put - // [ 2, 4, 6, 8, 10 ]
 
 
