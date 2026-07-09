@@ -89,16 +89,13 @@ start()
 {
 	console.log('BMW started')
 }
-
 manufacture()
 {
 	console.log(`year of manufacturing:,${this.yearofmanufacturing}`)
 }
-
 bmwcardetails()
 {
-	console.log(`car name is ${this.carname},car color is {this.carcolor},
-car model is ${this.carmodel}, car YOM is ${this.yearofmanufacturing}`)
+	console.log(`car name is ${this.carname},car color is {this.carcolor}, car model is ${this.carmodel}, car YOM is ${this.yearofmanufacturing}`)
 }
 }
 
