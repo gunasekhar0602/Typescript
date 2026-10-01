@@ -1,3 +1,4 @@
+// class classname
 class Person
 {
     // public property - accessible anywhere
@@ -9,8 +10,10 @@ class Person
     // private property - accessible only with in class
     private salary:number;
 
+    // create constructor and pass the values
     constructor(pname:string,page:number,psalary:number)
     {
+        // this represents class
         this.name=pname;
         this.age=page;
         this.salary=psalary
